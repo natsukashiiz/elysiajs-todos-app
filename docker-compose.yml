@@ -1,0 +1,8 @@
+services:
+  elysiajs-todos-app-mysql:
+    image: 'mysql:5.7'
+    environment:
+      - 'MYSQL_DATABASE=todos_db'
+      - 'MYSQL_ROOT_PASSWORD=1234'
+    ports:
+      - '6033:3306'
